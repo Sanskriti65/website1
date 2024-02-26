@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/login.css">
+    <title>Login</title>
+</head>
+<body>
+    <div class="Login">
+        <h1>Login</h1>
+        <form>
+            <div class="text">
+            <label for="Username"></label>
+            <input id="studentId" type="text"  placeholder="Username"  >
+         </div>
+        <div class="text">
+            <label for="password"></label>
+            <button type="button" id="password-toggle" onclick="togglePasswordVisibility()"><i class="fa fa-eye" aria-hidden="true"></i></button>
+            <input id="password" type="password" placeholder="Password" >
+           
+        </div>
+    </form>
+            <button class="button" type="submit" onclick="callLocalhostAPI()">Login</button>
+            <div class="password"> Forgot Password ?</div>
+            <div class="signup">
+                Don't have an account ? <a href="./signup.html">Signup</a>
+            </div>
+            <div class="cancel"><a href="./home.html ">Exit</a></div>
+        
+    </div>
+    <div id="loginsuccess">
+        <div class="logintext">
+            Login success
+        </div>
+    </div>
+    <div id="loginfailed">
+        <div class="logintextfail">
+            Login failed
+        </div>
+    </div>
+   <script src="./js/login.js"></script>
+</body>
+</html>
